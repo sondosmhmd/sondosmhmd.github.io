@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPEL</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="home">
+    <header>
+
+        <button class="hide" id="open">Open</button>
+        <button id="close">Close</button>
+        <div class="container">
+            <a href="index.html"><p> HOME</p></a>
+            <a href="Login.html"><p>LOGIN</p></a>
+            <a href="Register.html"><p>REGISTER</p></a>
+        </div>
+        
+
+
+        <div class="a">
+            <h1>OPEL MODELS</h1>
+            <br>
+            <table border="5">
+                <tr class="tr1">
+                    <th>
+                        Models
+
+                    </th>
+                    <th>
+                        info
+
+                    </th>
+                </tr>
+                <tr class="tr2">
+                    <td>
+                        mokka
+
+                    </td>
+                    <td class="b">
+                        Pure,confident and 100% electric...<a href="mokka.html" target="_blank">learn more </a>
+                    </td>
+                </tr>
+                <tr class="tr3">
+                    <td>
+                        corsa
+
+                    </td>
+                    <td class="d">
+                        it is a supermini car engineered...<a href="corsa.html" target="_blank">learn more </a>
+                    </td>
+                </tr>
+                <tr class="tr4">
+                    <td>
+                        crossland
+
+                    </td>
+                    <td class="f">
+                        it gives you more than just gorgeous SUV style...<a href="crossland.html" target="_blank">learn
+                            more </a>
+
+                    </td>
+                </tr>
+                <tr class="tr1">
+                    <td>
+                        insignial
+
+                    </td>
+                    <td class="g">
+                        it is a car manufactured and maketed across...<a href="Insignia.html" target="_blank">learn more
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <script>
+        let btnOpen = document.getElementById('open');
+        let btnClose = document.getElementById('close');
+        let container = document.querySelector('.container');
+        
+        
+        btnClose.onclick = function () {
+            container.classList.add('hide');
+            this.classList.add('hide');
+            btnOpen.classList.remove('hide');
+        }
+        
+        btnOpen.onclick = function () {
+            this.classList.add('hide');
+            btnClose.classList.remove('hide');
+            container.classList.remove('hide');
+        }</script>
+</body>
+
+</html>

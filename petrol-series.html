@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> 4 SERIES CONVERTIBLE </title>
+</head>
+<body class="petrol1">
+    <div class="bg-image">
+        <p id="name-series"> 4 SERIES CONVERTIBLE </p>
+    </div><br>
+    <ul class="ul-series">
+        <a class="a-series" href="#t-series"><li class="li-series"> Technical-Data </li></a>
+        <a class="a-series" href="#h2-series"><li class="li-series"> Dimensions-Data </li></a>
+        <a class="a-series" href="#photoo"><li class="li-series"> Images </li></a>
+        <a class="a-series" href="#v-series"><li class="li-series"> vedio </li></a>
+        <a class="a-series" href="#ifram-series"><li class="li-series"> More-Information </li></a>
+        <a class="a-series" href="#set-series"><li class="li-series"> Comment </li></a>
+     </ul> <br><hr>
+    <input id="btn" type="button" value="^">
+    <script>
+    let btn = document.getElementById('btn');
+        var scrollY; 
+        window.onscroll = function(){
+            if(scrollY >= 400)
+                btn.style.display = 'block';
+            else
+                btn.style.display = 'none';
+        }
+        btn.onclick = function(){
+            scroll(0,0)
+        }
+        </script>
+    <br><br><br>
+    <dl>
+        <dt id="d-series">   BMW 430i xDrive convertible </dt> <br>
+        <dd id="dd-series"> It is a 2023 model car and it is a convertible car from BMW </dd>
+    </dl>
+    <p id="price"> PRICE: <span class="price-s">72,800</span> <span class="span-series">$</span> - <span class="price-s">142,900</span> <span class ="span-series">$</span> </p>
+    <table id="t-series">
+        <caption id="cap-series"> Technical data for BMW 4 SERIES CONVERTIBLE </caption>
+        <tr class="tr-series">
+            <th class="th-series"> Power </th>
+            <td class="td-series"> 180 KW [245hp]</td>
+            <td id="td-series" rowspan="4"><img src="images/ph5.PNG" alt="image for 4 series convertible car "></td>
+        </tr>
+        <tr class="tr-series">
+            <th class="th-series"> Torque </th>
+            <td class="td-series"> 400 Nm</td>
+        </tr>
+        <tr class="tr-series">
+            <th class="th-series">0-100 Km/h </th>
+            <td class="td-series"> 6.4 s</td>
+        </tr>
+        <tr class="tr-series">
+            <th class="th-series"> Vmax </th>
+            <td class="td-series"> 250 Km/h </td>
+        </tr>
+        </table><br><hr><br>
+        <h2 id="h2-series"> Car dimensions BMW 4 SERIES CONVERTIBLE </h2>
+        <ol id="o-series" type="A">
+            <li>  Length 4768-4770 mm </li> <br>
+            <li>  Width 1852 mm </li> <br>
+            <li>  Height 1384-1394 mm </li> <br>
+            <li>  Wheel Base 2851 mm </li> <br>
+            <li>  Ground Clearance 121-126 mm </li> <br>
+        </ol>
+        <hr><br>
+        
+        <div class="photos-series">
+            <img src="images/ph1.PNG " alt="">
+            <p class="p-ph"> The redesigned air vents give the dashboard a fresh look-and provide 
+                personalized airflow to you and your front passenger.</p>
+
+        </div>
+        <div class="photos-series">
+            <img  src="images/ph2.PNG" alt="">
+            <p class="p-ph"> The redesigned kidney grille ele-vates the sportly styling of this impressive convertible.
+                Bold black paint only enhances its distinctive appearance.
+            </p>
+        </div>
+        <div class="photos-series">
+            <img src="images/ph3.PNG" alt="">
+            <p class="p-ph"> For the first time, BMW 4 convertible models include rear lights with high-precision laser technology.</p>
+        </div>
+        <div id="photoo"></div>
+        <div class="photos-series">
+            <img  src="images/ph-4.PNG" alt="">
+            <p class="p-ph"> Available in a variety of sophisticated shades, smooth vernasca leather upholstery offers 
+                incredible elegance and comfort -even on the longest journeys.</p>
+        </div>
+        <div class="photos-series">
+            <img  src="images/ph-5.PNG" alt="">
+            <p class="p-ph"> The 4 series convertible features a tailored soft top that can be raised or lowered in approximately 
+                10 seconds at speeds up to 30 mph. The top has been specially reinforced with panels to reduce road 
+                noise and insulate against the cold.
+            </p>
+        </div>
+        <div class="photos-series">
+            <img   src="images/ph4 (2).PNG " alt="">
+            <p class="p-ph"> The new QuickSelect start screen on the BMW Operating System 8.5 provides faster access to your favorite 
+                entertainment and contact.
+            </p>
+        </div>
+            <!-- <img onclick="main.src=this.src"  src="" alt="photo-4series convertible ">
+        </div> -->
+        <br>
+        <video id="v-series" src="media/series.mp4" controls muted loop preload="metadata"> your browser does not support the vedio </video><br>
+        <hr><br>
+        <p id="p-series"> More-Information </p>
+        <iframe id="ifram-series" src="https://en.wikipedia.org/wiki/BMW_4_Series" frameborder="5"></iframe>
+        <hr>
+        <form class="form-series" method="post">
+            <fieldset id="set-series">
+                <legend id="l-series"> COMMENT </legend>
+                <input id="i1-series" type="text" placeholder=" Write your comment">
+                <br> <br>
+                <input id="i2-series" type="submit" value=" Send ">
+            </fieldset>
+        </form> 
+</body>
+</html>
